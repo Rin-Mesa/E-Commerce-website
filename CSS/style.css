@@ -1,5 +1,5 @@
 :root {
-    --pink: #006400;
+    --green: #006400;
 }
 
 * {
@@ -30,11 +30,11 @@ section {
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153, .05);
+    background: #00800038;
 }
 
 .heading span {
-    color: var(--pink);
+    color: var(--green);
 }
 
 .btn {
@@ -50,7 +50,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--pink);
+    background: var(--green);
 }
 
 header {
@@ -85,7 +85,7 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--pink);
+    color: var(--green);
 }
 
 header .navbar a {
@@ -100,7 +100,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-    color: var(--pink);
+    color: var(--green);
 }
 
 header .icons a {
@@ -110,7 +110,7 @@ header .icons a {
 }
 
 header .icons a:hover {
-    color: var(--pink);
+    color: var(--green);
 }
 
 header #toggler {
@@ -129,8 +129,8 @@ header .fa-bars {
 .home {
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    background: url(./img/80c71af11b0cecdbd1bda88cfa1d7303.jpg) no-repeat;
+    min-height: 90vh;
+    background: url(/Img/image.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -146,7 +146,7 @@ header .fa-bars {
 
 .home .content span {
     font-size: 3.5rem;
-    color: var(--pink);
+    color: var(--green);
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -264,7 +264,7 @@ header .fa-bars {
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: var(--pink);
+    color: var(--green);
     background: rgba(255, 51, 153, .05);
     z-index: 1;
     border-radius: .5rem;
@@ -307,7 +307,7 @@ header .fa-bars {
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: var(--pink);
+    background: var(--green);
     color: #fff;
 
 }
@@ -334,7 +334,7 @@ header .fa-bars {
 
 .products .box-container .box .content .price {
     font-size: 2.5rem;
-    color: var(--pink);
+    color: var(--green);
     font-weight: bolder;
     padding-top: 1rem;
 }
@@ -358,7 +358,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .btn-buy:hover {
-    background: var(--pink);
+    background: var(--green);
 }
 
 .btn-b {
@@ -394,7 +394,7 @@ header .fa-bars {
 }
 
 .review .box-container .box .stars {
-    color: var(--pink);
+    color: var(--green);
     font-size: 2rem;
 }
 
@@ -465,7 +465,7 @@ header .fa-bars {
 }
 
 .contact .row form .box:focus {
-    border-color: var(--pink);
+    border-color: var(--green);
 }
 
 .contact .row form textarea {
@@ -500,7 +500,7 @@ header .fa-bars {
 }
 
 .footer .box-container .box a:hover {
-    color: var(--pink);
+    color: var(--green);
     text-decoration: underline;
 }
 
@@ -519,7 +519,7 @@ header .fa-bars {
 }
 
 .footer .credit span {
-    color: var(--pink);
+    color: var(--green);
 }
 
 
@@ -562,7 +562,7 @@ header .fa-bars {
         display: block;
         border-bottom: .1rem solid rgba(0, 0, 0, .1);
         padding: 1.5rem;
-        color: var(--pink);
+        color: var(--green);
         background: #fff;
     }
 
