@@ -1,5 +1,5 @@
 :root {
-    --pink: #006400;
+    --green: #006400;
 }
 
 * {
@@ -33,6 +33,19 @@ header {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+    border-radius: .5rem;
+}
+
 header .logo {
     font-size: 3rem;
     color: #333;
@@ -41,7 +54,7 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--pink);
+    color: var(--green);
 }
 
 header .navbar a {
@@ -54,7 +67,7 @@ header .navbar a {
     text-decoration: none;
 }
 header .navbar a:hover {
-    color: var(--pink);
+    color: var(--green);
 }
 
 header .icons a {
@@ -64,18 +77,20 @@ header .icons a {
 }
 
 header .icons a:hover {
-    color: var(--pink);
+    color: var(--green);
 }
 
-header #toggler {
+header #check {
     display: none;
 }
 
-header .fa-bars {
+header #menu-btn{
     font-size: 3rem;
     color: #333;
     border-radius: .5rem;
     cursor: pointer;
+}
+header #close-btn {
     display: none;
 }
 
@@ -119,39 +134,55 @@ header .fa-bars {
 
 
 @media (max-width:768px) {
-    header .fa-bars {
-        display: block;
-        background:transparent;
+    html {
+        font-size: 50%;
     }
 
+    #checkbox:checked ~ .icons #menu-btn{
+        display: none;
+    }
+    .icons #close-btn{
+        display: none;
+    }
+    #checkbox:checked ~ .icons #close-btn{
+        display: block;
+    }
     header .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background: transparent;
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        width: 100%;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
     }
-
-    header #toggler:checked ~ .navbar {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    #checkbox:checked ~ .navbar{
+        height: 17.7rem;
     }
-
     header .navbar a {
         margin: 1.5rem;
         padding: 1.5rem;
-        background:transparent;
-        border: .1rem solid rgba(0, 0, 0, .1);
         display: block;
-    }
-
-    .home .content h3 {
-        font-size: 5rem;
-    }
-
-    .home .content span {
+        text-align: center;
         font-size: 2.5rem;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+
+    #checkbox:checked ~ .navbar a{
+        transform: translateY(0);
+    }
+    
+    header .navbar a:hover {
+        background: var(--green);
+        color: #fff;
+        border-radius: .5rem;
+    }
+    header #toggler:checked~.navbar {
+        display: block;
     }
 
     .icons-container .icons h3 {
@@ -167,7 +198,6 @@ header .fa-bars {
     html {
         font-size: 50%;
     }
-
     .heading {
         font-size: 3rem;
     }
