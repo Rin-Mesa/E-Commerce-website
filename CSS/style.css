@@ -170,7 +170,12 @@ header .fa-bars {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.container #slider-img-2 h2{
+    color: #333;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
 .container #slider-img-1 {
     background-image: url(/Img/wrapper1.png);
 }
