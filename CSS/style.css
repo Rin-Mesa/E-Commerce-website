@@ -708,20 +708,6 @@ header .fa-bars {
     margin-top: 1rem;
 }
 
-.footer .credit {
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #333;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-}
-
-.footer .credit span {
-    color: var(--green);
-}
-
 .social-media {
     margin-top: 1rem;
     display: flex;
@@ -736,7 +722,7 @@ header .fa-bars {
     border-radius: 50%;
     padding: .5rem;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
 }
 
 .social-media i:hover {
@@ -744,6 +730,21 @@ header .fa-bars {
     text-decoration: none;
 
 }
+
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
 
 
 @media (max-width:991px) {
