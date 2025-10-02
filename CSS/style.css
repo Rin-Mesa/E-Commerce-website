@@ -338,7 +338,7 @@ header .fa-bars {
 
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-thumb {
