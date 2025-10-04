@@ -1,0 +1,57 @@
+.contact {
+  .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+
+    form {
+      flex: 1 1 40rem;
+      padding: 2rem 2.5rem;
+      background: $white;
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      box-shadow: $shadow-header;
+      border-radius: $radius-small;
+
+      .box {
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: $primary-color;
+        text-transform: none;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-radius: $radius-small;
+        margin: 0.7rem 0;
+        width: 100%;
+
+        &:focus {
+          border-color: $accent-color;
+        }
+      }
+
+      textarea {
+        height: 15rem;
+        resize: none;
+      }
+    }
+
+    .image {
+      flex: 1 1 40rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.locations {
+  iframe {
+    width: 90%;
+    height: 45rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: $radius-small;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+}

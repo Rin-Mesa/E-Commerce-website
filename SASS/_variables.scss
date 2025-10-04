@@ -1,21 +1,42 @@
-// _variables.scss
-
 // Colors
 $primary-color: #333;
 $accent-color: var(--green);
 $bg-highlight: #00800038;
-$text-light: #666;
+$text-light: #999;
+$text-dark: #333;
 $white: #fff;
+$scroll-track: rgba(0, 0, 0, 0.1);
+$scroll-thumb: green;
 
 // Fonts
-$heading-font-size: 4rem;
+$heading-font-size: 6rem;
+$subheading-font-size: 3.5rem;
+$paragraph-font-size: 1.5rem;
 $logo-font-size: 3rem;
-$nav-font-size: 2rem;
-$btn-font-size: 1.7rem;
+$radius-small: 0.5rem;
+$slide-text-font-size: 1rem;
 
 // Spacing
 $padding-section: 2rem 9%;
-$padding-btn: 0.9rem 3.5rem;
-$radius-btn: 5rem;
-$radius-small: 0.5rem;
+$padding-slide: 40px;
+$padding-slide-text: 20px;
+
+// Radius & Shadows
+$radius-slide: 20px;
+$radius-scroll: 10px;
+$shadow-slide: 0 10px 20px rgba(0, 0, 0, 0.2);
 $shadow-header: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+// Sizes
+$slide-width: 300px;
+$slide-height: 300px;
+
+$btn-font-size: 1.7rem;
+$radius-btn: 5rem;
+$padding-btn: 0.9rem 3.5rem;
+$footer-heading-color: darkgreen;
+
+// _variables.scss
+$breakpoint-lg: 991px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 500px;

@@ -1,0 +1,46 @@
+// _responsive.scss
+
+@include respond-max($breakpoint-lg) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .products .box-container {
+    grid-auto-columns: 45%;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+
+  .locations iframe {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .product-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 130px 2% 30px;
+
+    .product-img {
+      grid-template-columns: 1fr;
+      height: auto;
+
+      .list {
+        flex-direction: row;
+        overflow-x: auto;
+
+        img {
+          height: 80px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

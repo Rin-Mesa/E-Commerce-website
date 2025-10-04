@@ -79,3 +79,48 @@ header {
     display: none;
   }
 }
+
+header {
+  // Base styles...
+
+  @include respond-max($breakpoint-lg) {
+    padding: 2rem 3%;
+  }
+
+  @include respond-max($breakpoint-md) {
+    padding: 1rem 2%;
+
+    .fa-bars {
+      display: block;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      margin: 1rem 0;
+      padding: 1rem;
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+
+      &:hover {
+        background: #fff;
+        color: $accent-color;
+      }
+    }
+
+    #toggler:checked ~ .navbar {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}

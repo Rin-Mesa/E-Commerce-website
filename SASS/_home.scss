@@ -1,0 +1,24 @@
+.home {
+  .content {
+    max-width: 50rem;
+
+    h3 {
+      font-size: $heading-font-size;
+      color: $text-dark;
+    }
+
+    span {
+      font-size: $subheading-font-size;
+      color: $accent-color;
+      padding: 1rem 0;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: $paragraph-font-size;
+      color: $text-light;
+      padding: 1rem 0;
+      line-height: 1.5;
+    }
+  }
+}
