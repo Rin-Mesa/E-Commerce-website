@@ -1,0 +1,17 @@
+// _button.scss
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: $radius-btn;
+  background: $primary-color;
+  color: $white;
+  padding: $padding-btn;
+  cursor: pointer;
+  font-size: $btn-font-size;
+  text-decoration: none;
+
+  &:hover {
+    background: $accent-color;
+  }
+}

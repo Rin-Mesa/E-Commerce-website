@@ -1,0 +1,14 @@
+// _heading.scss
+
+.heading {
+  text-align: center;
+  font-size: $heading-font-size;
+  color: $primary-color;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: $bg-highlight;
+
+  span {
+    color: $accent-color;
+  }
+}

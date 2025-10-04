@@ -1,0 +1,81 @@
+// _header.scss
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $padding-section;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: $shadow-header;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+    border-radius: $radius-small;
+  }
+
+  .logo {
+    font-size: $logo-font-size;
+    color: $primary-color;
+    font-weight: bolder;
+    text-decoration: none;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  .navbar {
+    a {
+      font-size: $nav-font-size;
+      padding: 0 1.5rem;
+      color: $text-light;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .icons {
+    a {
+      font-size: 2.5rem;
+      color: $primary-color;
+      margin-left: 1.5rem;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    .fas {
+      text-decoration: none;
+    }
+  }
+
+  #toggler {
+    display: none;
+  }
+
+  .fa-bars {
+    font-size: 3rem;
+    color: $primary-color;
+    border-radius: $radius-small;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+}
